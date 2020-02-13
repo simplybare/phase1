@@ -1,0 +1,16 @@
+@import 'fonts';
+@import 'utils';
+
+$hamburger-layer-color: #ddc8b7;
+$hamburger-hover-opacity: 1;
+
+@import 'lib/hamburgers/hamburgers';
+
+a {
+  transition: all 0.2s linear;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}

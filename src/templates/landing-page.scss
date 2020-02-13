@@ -1,0 +1,58 @@
+.landing-page {
+  .hero {
+    min-height: 300px;
+    @media (min-width: 550px) {
+      height: 500px;
+    }
+    @media (min-width: 768px) {
+      height: 633px;
+    }
+
+    .bg-image {
+      position: absolute !important;
+      top: 0;
+      img {
+        object-position: 50% 60% !important;
+      }
+    }
+
+    .header-background {
+      height: 0;
+      @media (max-width: 768px) {
+        height: 82px;
+      }
+
+      h1 {
+        font-size: 40px;
+        margin: 23px 0;
+        line-height: 1.2;
+        width: 95%;
+        @media (min-width: 768px) {
+          font-size: 68px;
+          margin: 53px 0;
+          width: 500px;
+        }
+      }
+    }
+  }
+
+  // To offset the anchor by header amount
+  .header-offset {
+    display: block;
+    transform: translateY(-80px);
+  }
+
+  .feature-title {
+    font-size: 26px;
+  }
+
+  .feature-section:not(:last-child) {
+    @media (min-width: 1024px) {
+      margin-right: 25px;
+    }
+  }
+}
+
+#email-capture-form iframe {
+  width: 100% !important;
+}

@@ -1,0 +1,168 @@
+.navbar {
+  &__li {
+    &:after {
+      display: inline-block;
+      margin: 0 7px;
+      border-right: 1px solid #66403b;
+      height: 20px;
+      width: 0px;
+      content: '';
+      font-size: 21px;
+      vertical-align: bottom;
+      @media (min-width: 1024px) {
+        margin: 0 25px;
+      }
+    }
+  }
+
+  &__li:last-of-type {
+    margin-right: 40px;
+    &:after {
+      border: none;
+    }
+  }
+
+  .hamburger {
+    transform: scale(0.7);
+    width: 80px;
+    margin: 0 -19px 0 -15px;
+  }
+}
+
+.hamburger-flyout {
+  &__li:not(:last-of-type) {
+    margin-bottom: 62px;
+  }
+
+  &__li {
+    font-size: 24px;
+  }
+}
+
+.navbar {
+  button:active,
+  button:focus {
+    outline: none;
+  }
+
+  ::-webkit-scrollbar {
+    background-color: #ba6954;
+    width: 6px;
+    border-left: 1px solid #ddc8b7;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #ddc8b7;
+  }
+
+  .ReactA11ySelect {
+    transition: all 0.2s linear;
+    /* removes inner shadow on iOS */
+    -webkit-appearance: none;
+    /* min heights for safari */
+    min-height: 2rem;
+  }
+
+  // A whole bunch of custom styling on the select
+  .ReactA11ySelect {
+    margin: 0.5rem;
+    display: inline-block;
+    height: 42px;
+    width: 73px;
+    color: #ba6954;
+    background-color: #ddc8b7;
+    font-family: 'Optima', 'sans-serif';
+    position: relative;
+
+    &:focus,
+    &:focus-within,
+    &:active {
+      color: #fff;
+
+      // button {
+      //   border-color: #fff;
+      // }
+
+      button ~ ul {
+        // border-color: #ddc8b7;
+        box-shadow: 0 0 1px #ba6954;
+
+        li {
+          // border-color: #fff;
+          // color: #fff;
+        }
+      }
+    }
+
+    button {
+      border-radius: 0;
+      border-width: 2px;
+      border-color: #ddc8b7;
+      outline: none;
+      text-transform: uppercase;
+      font-size: 1.125rem;
+      min-width: 0;
+      width: 100%;
+      padding: 0.5rem;
+      color: #ba6954;
+      background-color: #ddc8b7;
+      background-image: url('/img/carat-dark.svg');
+      background-repeat: no-repeat;
+      background-position: 112% 50%;
+      padding-right: 32px;
+    }
+
+    &__ul {
+      background-color: #ba6954;
+      border-radius: 0;
+      box-shadow: none;
+      border: 2px solid #ddc8b7;
+      border-top: none;
+      margin-top: 0;
+      width: 100%;
+      max-height: 130px;
+      overflow-y: scroll;
+
+      &__li {
+        color: #ddc8b7;
+        text-transform: uppercase;
+        padding: 0.5rem;
+        padding-left: 10px;
+        outline: none;
+
+        &:hover,
+        &:focus {
+          background-color: #ddc8b7;
+          color: #ba6954;
+        }
+
+        &:not(:last-child) {
+          border-bottom: 1px solid #ddc8b7;
+        }
+
+        &:not([aria-checked='true']) {
+          padding: 0.5rem;
+          padding-left: 10px;
+        }
+
+        &[aria-checked='true'] {
+          background-color: #ddc8b7;
+          color: #ba6954;
+        }
+      }
+    }
+
+    // Hide the down arrow
+    &__button__arrow-indicator {
+      display: none;
+    }
+
+    // Hide the checkmark
+    .ReactA11ySelect__ul__li__selected-indicator {
+      display: none;
+    }
+  }
+
+  label[for='navbar-province'] {
+    display: inline-block;
+  }
+}
