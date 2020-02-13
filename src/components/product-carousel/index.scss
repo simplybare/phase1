@@ -1,0 +1,129 @@
+@import '~react-image-gallery/styles/scss/image-gallery.scss';
+
+.product-carousel {
+  &__button {
+    font-size: 17px;
+    height: 41px;
+    position: relative;
+    margin-bottom: 30px;
+
+    &--active::after {
+      content: '';
+      position: absolute;
+      left: calc(50% - 13px);
+      display: block;
+      top: 100%;
+      border-width: 18px;
+      border-top-color: #ba6954;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      width: 26px;
+      height: 36px;
+    }
+
+    &:first-child {
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+    &:not(:first-child) {
+      border-left: none;
+    }
+    &:last-child {
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+  }
+
+  &__title {
+    font-size: 55px;
+  }
+
+  &__subtitle {
+    @media (max-width: 640px) {
+      margin-bottom: -20px;
+    }
+    font-size: 30px;
+  }
+
+  &__stats-box {
+    border-left: none;
+    border-right: none;
+  }
+
+  .image-gallery {
+    width: 450px;
+    @media (max-width: 1024px) {
+      width: 350px;
+    }
+    @media (max-width: 640px) {
+      width: calc(100vw - 40px);
+    }
+
+    margin: 0 auto;
+  }
+
+  .image-gallery-slide {
+    height: 450px;
+    width: 450px;
+    @media (max-width: 1024px) {
+      width: 350px;
+      height: 350px;
+    }
+    @media (max-width: 640px) {
+      width: calc(100vw - 40px);
+      height: calc(100vw - 40px);
+    }
+
+    & > div {
+      position: relative;
+      max-height: 100%;
+
+      img {
+        height: 450px;
+        object-fit: cover;
+        object-position: center center;
+        @media (max-width: 1024px) {
+          height: 350px;
+        }
+        @media (max-width: 640px) {
+          height: calc(100vw - 40px);
+        }
+      }
+    }
+  }
+
+  .image-gallery-icon {
+    filter: none;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .image-gallery-bullet {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: none;
+    border: none;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+
+  .image-gallery-left-nav:hover .image-gallery-svg {
+    transform: scale(0.55) translateX(-50%);
+  }
+  .image-gallery-right-nav:hover .image-gallery-svg {
+    transform: scale(0.55) translateX(50%);
+  }
+
+  .image-gallery-left-nav .image-gallery-svg {
+    transform: scale(0.5) translateX(-50%);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .image-gallery-right-nav .image-gallery-svg {
+    transform: scale(0.5) translateX(50%);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+}

@@ -1,0 +1,23 @@
+footer {
+  a {
+    transition: all 0.2s linear;
+  }
+
+  .footer-section {
+    width: 41.666666666%;
+
+    &:last-child {
+      width: 16.666666666%;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 767px) {
+      // 768 - 1 for only small screens
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.page-section {
+  padding-top: 70px;
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .section-header {
+    position: relative;
+    font-size: 55px;
+    margin-bottom: 40px;
+
+    // Make anchors appear above headers
+    a {
+      position: absolute;
+      top: -80px;
+      left: 0;
+    }
+
+    & ~ a {
+      transform: translateY(-80px);
+    }
+
+    @media (max-width: 640px) {
+      font-size: 32px;
+    }
+  }
+}
