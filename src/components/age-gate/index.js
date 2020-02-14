@@ -187,7 +187,7 @@ const _AgeGate = ({ onValidate, activateTrap, deactivateTrap }) => {
           </form>
         )}
       </section>
-      {invalidAge ? <Footer /> : <div className="flex-1" />}
+      {invalidAge ? <Footer /> : <div className="flex-1 test" />}
     </dialog>
   );
 };
