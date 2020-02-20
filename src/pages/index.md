@@ -33,7 +33,7 @@ products:
     terpenes: 3.5%
     profile: Myrcene, Caryophyllene, Ocimene, Humulene
     description: >
-      Our version of this sativa-dominant strain is 100% certified organic. Her exceptionally aromatic flower gives off a blueberry aroma with a warm and peppery terpene profile. Hand-harvested and cold cured, these buds were carefully selected, trimmed and placed in a recyclable glass jar, sealed for freshness. Like any good dream, she’s both sweet and spicy.
+      Our version of this sativa-dominant strain is organic certified. Her exceptionally aromatic flower gives off a blueberry aroma with a warm and peppery terpene profile. Hand-harvested and cold cured, these buds were carefully selected, trimmed and placed in a recyclable glass jar, sealed for freshness. Like any good dream, she’s both sweet and spicy.
     footnote: 'According to COA Results for Lot No: 01-001'
   - key: creek-congo
     subtitle: BC Organic
@@ -50,6 +50,6 @@ products:
     terpenes: 2.7%
     profile: Nerolidol, Caryophyllene, Myrcene, Terpinolene
     description: >
-      100% certified organic and teeming with exotic mystique. This sativa-dominant hybrid is rumoured to be derived from genetics in Africa and then perfected in Robert’s Creek on the Sunshine Coast, BC. Her abundance of red pistils and medium-density flowers offer a spicy sandalwood aroma and a natural pink glow. Grown in living soil then cold-cured, hand-trimmed and hand-packed in a recyclable glass jar sealed for freshness. She is truly a connoisseur’s cultivar.
+      Organic certified and teeming with exotic mystique. This sativa-dominant hybrid is rumoured to be derived from genetics in Africa and then perfected in Robert’s Creek on the Sunshine Coast, BC. Her abundance of red pistils and medium-density flowers offer a spicy sandalwood aroma and a natural pink glow. Grown in living soil then cold-cured, hand-trimmed and hand-packed in a recyclable glass jar sealed for freshness. She is truly a connoisseur’s cultivar.
     footnote: 'According to COA Results for Lot No: 03-001'
 ---
